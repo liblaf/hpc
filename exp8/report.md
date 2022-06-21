@@ -4,7 +4,6 @@ category: "Course Work"
 tags:
   - "Introduction to High Performance Computing"
   - "HPC"
-  - "CUDA"
 ---
 
 # exp8: 单机性能优化

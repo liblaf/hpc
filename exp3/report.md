@@ -4,6 +4,7 @@ category: "Course Work"
 tags:
   - "Introduction to High Performance Computing"
   - "HPC"
+  - "OMP"
 ---
 
 # exp3: 测量 OpenMP 并行 for 循环不同调度策略的性能

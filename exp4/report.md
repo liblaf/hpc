@@ -4,6 +4,7 @@ category: "Course Work"
 tags:
   - "Introduction to High Performance Computing"
   - "HPC"
+  - "intrinsic"
 ---
 
 # exp4: 自动向量化与基于 intrinsic 的手动向量化

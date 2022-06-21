@@ -4,6 +4,7 @@ category: "Course Work"
 tags:
   - "Introduction to High Performance Computing"
   - "HPC"
+  - "MPI"
 ---
 
 # exp1: MPI 异步通信

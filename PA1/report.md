@@ -4,6 +4,7 @@ category: "Course Work"
 tags:
   - "Introduction to High Performance Computing"
   - "HPC"
+  - "MPI"
 ---
 
 # PA1: 奇偶排序
