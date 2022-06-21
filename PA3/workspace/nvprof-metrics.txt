@@ -1,0 +1,51 @@
+Invocations                               Metric Name                         Metric Description         Min         Max         Avg
+Device "Tesla P100-PCIE-16GB (0)"
+    Kernel: _GLOBAL__N__56_tmpxft_000981f1_00000000_30_benchmark_compute_61_cpp1_ii_main::compareKernel(int, int*, int*, int*)
+          1                         branch_efficiency                          Branch Efficiency     100.00%     100.00%     100.00%
+          1                 warp_execution_efficiency                  Warp Execution Efficiency     100.00%     100.00%     100.00%
+          1         warp_nonpred_execution_efficiency   Warp Non-Predicated Execution Efficiency      95.00%      95.00%      95.00%
+          1                            gld_efficiency              Global Memory Load Efficiency     100.00%     100.00%     100.00%
+          1                            gst_efficiency             Global Memory Store Efficiency       0.00%       0.00%       0.00%
+          1                         shared_efficiency                   Shared Memory Efficiency       0.00%       0.00%       0.00%
+    Kernel: _GLOBAL__N__56_tmpxft_000981f1_00000000_30_benchmark_compute_61_cpp1_ii_main::genDataKernel(int, int, int*)
+          1                         branch_efficiency                          Branch Efficiency     100.00%     100.00%     100.00%
+          1                 warp_execution_efficiency                  Warp Execution Efficiency      98.98%      98.98%      98.98%
+          1         warp_nonpred_execution_efficiency   Warp Non-Predicated Execution Efficiency      98.75%      98.75%      98.75%
+          1                            gld_efficiency              Global Memory Load Efficiency       0.00%       0.00%       0.00%
+          1                            gst_efficiency             Global Memory Store Efficiency     100.00%     100.00%     100.00%
+          1                         shared_efficiency                   Shared Memory Efficiency       0.00%       0.00%       0.00%
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase2KernelHorizontal(int, int*, int, int)
+         96                         branch_efficiency                          Branch Efficiency     100.00%     100.00%     100.00%
+         96                 warp_execution_efficiency                  Warp Execution Efficiency      97.97%     100.00%      98.03%
+         96         warp_nonpred_execution_efficiency   Warp Non-Predicated Execution Efficiency      81.95%      95.89%      95.26%
+         96                            gld_efficiency              Global Memory Load Efficiency     100.00%     100.00%     100.00%
+         96                            gst_efficiency             Global Memory Store Efficiency     100.00%     100.00%     100.00%
+         96                         shared_efficiency                   Shared Memory Efficiency      67.38%      69.64%      67.45%
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase2KernelVertical(int, int*, int, int)
+         96                         branch_efficiency                          Branch Efficiency     100.00%     100.00%     100.00%
+         96                 warp_execution_efficiency                  Warp Execution Efficiency      51.59%     100.00%      98.49%
+         96         warp_nonpred_execution_efficiency   Warp Non-Predicated Execution Efficiency      41.59%      97.89%      95.93%
+         96                            gld_efficiency              Global Memory Load Efficiency     100.00%     100.00%     100.00%
+         96                            gst_efficiency             Global Memory Store Efficiency     100.00%     100.00%     100.00%
+         96                         shared_efficiency                   Shared Memory Efficiency      18.58%      69.01%      67.43%
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase1Kernel(int, int*, int, int)
+         96                         branch_efficiency                          Branch Efficiency     100.00%     100.00%     100.00%
+         96                 warp_execution_efficiency                  Warp Execution Efficiency      47.13%     100.00%      98.35%
+         96         warp_nonpred_execution_efficiency   Warp Non-Predicated Execution Efficiency      46.31%      97.76%      96.15%
+         96                            gld_efficiency              Global Memory Load Efficiency     100.00%     100.00%     100.00%
+         96                            gst_efficiency             Global Memory Store Efficiency     100.00%     100.00%     100.00%
+         96                         shared_efficiency                   Shared Memory Efficiency      18.52%      68.69%      67.12%
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase3Kernel(int, int*, int, int)
+         96                         branch_efficiency                          Branch Efficiency     100.00%     100.00%     100.00%
+         96                 warp_execution_efficiency                  Warp Execution Efficiency      98.12%     100.00%      98.18%
+         96         warp_nonpred_execution_efficiency   Warp Non-Predicated Execution Efficiency      84.89%      95.93%      95.23%
+         96                            gld_efficiency              Global Memory Load Efficiency     100.00%     100.00%     100.00%
+         96                            gst_efficiency             Global Memory Store Efficiency     100.00%     100.00%     100.00%
+         96                         shared_efficiency                   Shared Memory Efficiency      67.69%      69.91%      67.75%
+    Kernel: _GLOBAL__N__55_tmpxft_000981f1_00000000_25_apsp_ref_compute_61_cpp1_ii_31a82fee::kernel(int, int, int*)
+       1000                         branch_efficiency                          Branch Efficiency     100.00%     100.00%     100.00%
+       1000                 warp_execution_efficiency                  Warp Execution Efficiency      98.53%      98.53%      98.53%
+       1000         warp_nonpred_execution_efficiency   Warp Non-Predicated Execution Efficiency      96.17%      96.17%      96.17%
+       1000                            gld_efficiency              Global Memory Load Efficiency      90.07%      90.07%      90.07%
+       1000                            gst_efficiency             Global Memory Store Efficiency     100.00%     100.00%     100.00%
+       1000                         shared_efficiency                   Shared Memory Efficiency       0.00%       0.00%       0.00%

@@ -1,2 +1,3 @@
-# hpc
-Introduction to High Performance Computing
+# Introduction to High Performance Computing
+
+课程的内容是介绍高性能计算的基本概念、方法和工具。它包括了高性能计算机的体系结构的简单介绍，并行程序设计模型、程序性能模型、性能调试技术、并行程序设计和编程的方法，并行程序开发平台和工具以及并行算法的介绍。

@@ -1,0 +1,179 @@
+Available Events:
+                            Name   Description
+Device 0 (Tesla P100-PCIE-16GB):
+	Domain domain_a:
+                active_cycles_pm:  Number of cycles a multiprocessor has at least one active warp.
+
+                 active_warps_pm:  Accumulated number of active warps per cycle. For every cycle it increments by the number of active warps in the cycle which can be in the range 0 to 64.
+
+       tex0_cache_sector_queries:  Number of texture cache 0 requests. This increments by 1 for each 32-byte access.
+
+       tex1_cache_sector_queries:  Number of texture cache 1 requests. This increments by 1 for each 32-byte access.
+
+        tex0_cache_sector_misses:  Number of texture cache 0 misses. This increments by 1 for each 32-byte access.
+
+        tex1_cache_sector_misses:  Number of texture cache 1 misses. This increments by 1 for each 32-byte access.
+
+               elapsed_cycles_pm:  Number of cycles between the profiled period.
+
+	Domain domain_q:
+                   active_cycles:  At least 1 active warp in the quad
+
+               elapsed_cycles_sm:  Elapsed clocks
+
+	Domain domain_b:
+           fb_subp0_read_sectors:  Number of DRAM read requests to sub partition 0, increments by 1 for 32 byte access.
+
+           fb_subp1_read_sectors:  Number of DRAM read requests to sub partition 1, increments by 1 for 32 byte access.
+
+          fb_subp0_write_sectors:  Number of DRAM write requests to sub partition 0, increments by 1 for 32 byte access.
+
+          fb_subp1_write_sectors:  Number of DRAM write requests to sub partition 1, increments by 1 for 32 byte access.
+
+          fb1_subp0_read_sectors:  Number of DRAM read requests to sub partition 0 of fb1, increments by 1 for 32 byte access.
+
+          fb1_subp1_read_sectors:  Number of DRAM read requests to sub partition 1 of fb1, increments by 1 for 32 byte access.
+
+         fb1_subp0_write_sectors:  Number of DRAM write requests to sub partition 0 of fb1, increments by 1 for 32 byte access.
+
+         fb1_subp1_write_sectors:  Number of DRAM write requests to sub partition 1 of fb1, increments by 1 for 32 byte access.
+
+	Domain domain_c:
+                   gld_inst_8bit:  Total number of 8-bit global load instructions that are executed by all the threads across all thread blocks.
+
+                  gld_inst_16bit:  Total number of 16-bit global load instructions that are executed by all the threads across all thread blocks.
+
+                  gld_inst_32bit:  Total number of 32-bit global load instructions that are executed by all the threads across all thread blocks.
+
+                  gld_inst_64bit:  Total number of 64-bit global load instructions that are executed by all the threads across all thread blocks.
+
+                 gld_inst_128bit:  Total number of 128-bit global load instructions that are executed by all the threads across all thread blocks.
+
+                   gst_inst_8bit:  Total number of 8-bit global store instructions that are executed by all the threads across all thread blocks.
+
+                  gst_inst_16bit:  Total number of 16-bit global store instructions that are executed by all the threads across all thread blocks.
+
+                  gst_inst_32bit:  Total number of 32-bit global store instructions that are executed by all the threads across all thread blocks.
+
+                  gst_inst_64bit:  Total number of 64-bit global store instructions that are executed by all the threads across all thread blocks.
+
+                 gst_inst_128bit:  Total number of 128-bit global store instructions that are executed by all the threads across all thread blocks.
+
+	Domain domain_l:
+           active_cycles_in_trap:  active cycles when SM is in trap mode
+
+	Domain domain_d:
+                 prof_trigger_00:  Number of pmtrig instructions executed where Imm16 & 0x0001
+
+                 prof_trigger_01:  Number of pmtrig instructions executed where Imm16 & 0x0002
+
+                 prof_trigger_02:  Number of pmtrig instructions executed where Imm16 & 0x0004
+
+                 prof_trigger_03:  Number of pmtrig instructions executed where Imm16 & 0x0008
+
+                 prof_trigger_04:  Number of pmtrig instructions executed where Imm16 & 0x0010
+
+                 prof_trigger_05:  Number of pmtrig instructions executed where Imm16 & 0x0020
+
+                 prof_trigger_06:  Number of pmtrig instructions executed where Imm16 & 0x0040
+
+                 prof_trigger_07:  Number of pmtrig instructions executed where Imm16 & 0x0080
+
+                  warps_launched:  Number of warps launched
+
+                    inst_issued0:  Number of cycles that did not issue any instruction, increments per warp.
+
+                    inst_issued1:  Number of cycles that issued single instruction, increments per warp.
+
+                    inst_issued2:  Number of cycles that issued dual instructions, increments per warp.
+
+                   inst_executed:  Number of instructions executed per warp.
+
+           inst_executed_in_trap:  Number of instructions executed when SM is in trap mode
+
+            thread_inst_executed:  Number of instructions executed by the active threads. For each instruction it increments by number of threads, including predicated-off threads, that execute the instruction. It does not include replays.
+
+not_predicated_off_thread_inst_executed:  Number of thread instructions executed that are not predicated off
+
+                     local_store:  Number of executed store instructions where state space is specified as local, increments per warp on a multiprocessor.
+
+                      local_load:  Number of executed load instructions where state space is specified as local, increments per warp on a multiprocessor.
+
+                     shared_load:  Number of executed load instructions where state space is specified as shared, increments per warp on a multiprocessor
+
+                    shared_store:  Number of executed store instructions where state space is specified as shared, increments per warp on a multiprocessor.
+
+   inst_executed_shared_atom_cas:  Number of ATOMS.CAS instructions executed
+
+                     shared_atom:  Number of ATOMS instructions executed
+
+                 global_atom_cas:  Number of ATOM.CAS instructions executed per warp
+
+                      atom_count:  Number of ATOM instructions executed per warp
+
+                     global_load:  Number of executed load instructions where state space is specified as global, increments per warp on a multiprocessor.
+
+                    global_store:  Number of executed store instructions where state space is specified as global, increments per warp on a multiprocessor.
+
+                    generic_load:  Number of LD instructions executed
+
+                   generic_store:  Number of ST instructions executed
+
+                      gred_count:  Number of reduction operations performed per warp.
+
+                divergent_branch:  Number of divergent branches within a warp. This counter will be incremented by one if at least one thread in a warp diverges (that is, follows a different execution path) via a conditional branch.
+
+                          branch:  Number of branch instructions executed per warp on a multiprocessor.
+
+                    active_warps:  Number of active warps in the subpartition
+
+	Domain domain_p:
+         shared_ld_bank_conflict:  Number of shared load bank conflict generated when the addresses for two or more shared memory load requests fall in the same memory bank.
+
+         shared_st_bank_conflict:  Number of shared store bank conflict generated when the addresses for two or more shared memory store requests fall in the same memory bank.
+
+          shared_ld_transactions:  Number of transactions for shared load accesses. Maximum transaction size in maxwell is 128 bytes, any warp accessing more that 128 bytes will cause multiple transactions for a shared load instruction. This also includes extra transactions caused by shared bank conflicts.
+
+          shared_st_transactions:  Number of transactions for shared store accesses. Maximum transaction size in maxwell is 128 bytes, any warp accessing more that 128 bytes will cause multiple transactions for a shared store instruction. This also includes extra transactions caused by shared bank conflicts.
+
+	Domain domain_e:
+    l2_subp0_write_sector_misses:  Number of write requests sent to DRAM from slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+    l2_subp1_write_sector_misses:  Number of write requests sent to DRAM from slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+     l2_subp0_read_sector_misses:  Number of read requests sent to DRAM from slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+     l2_subp1_read_sector_misses:  Number of read requests sent to DRAM from slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp0_read_tex_sector_queries:  Number of read requests from Texture cache to slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp0_write_tex_sector_queries:  Number of write requests from Texture cache to slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+   l2_subp0_read_tex_hit_sectors:  Number of read requests from Texture cache that hit in slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+  l2_subp0_write_tex_hit_sectors:  Number of write requests from Texture cache that hit in slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp0_read_sysmem_sector_queries:  Number of system memory read requests to slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp0_write_sysmem_sector_queries:  Number of system memory write requests to slice 0 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp0_total_read_sector_queries:  Total read requests to slice 0 of L2 cache. This includes requests from  L1, Texture cache, system memory. This increments by 1 for each 32-byte access.
+
+l2_subp0_total_write_sector_queries:  Total write requests to slice 0 of L2 cache. This includes requests from  L1, Texture cache, system memory. This increments by 1 for each 32-byte access.
+
+l2_subp1_read_tex_sector_queries:  Number of read requests from Texture cache to slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp1_write_tex_sector_queries:  Number of write requests from Texture cache to slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+   l2_subp1_read_tex_hit_sectors:  Number of read requests from Texture cache that hit in slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+  l2_subp1_write_tex_hit_sectors:  Number of write requests from Texture cache that hit in slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp1_read_sysmem_sector_queries:  Number of system memory read requests to slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp1_write_sysmem_sector_queries:  Number of system memory write requests to slice 1 of L2 cache. This increments by 1 for each 32-byte access.
+
+l2_subp1_total_read_sector_queries:  Total read requests to slice 1 of L2 cache. This includes requests from  L1, Texture cache, system memory. This increments by 1 for each 32-byte access.
+
+l2_subp1_total_write_sector_queries:  Total write requests to slice 1 of L2 cache. This includes requests from  L1, Texture cache, system memory. This increments by 1 for each 32-byte access.
+

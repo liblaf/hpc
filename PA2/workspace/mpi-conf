@@ -1,0 +1,1 @@
+srun -N 1 --ntasks-per-node 28

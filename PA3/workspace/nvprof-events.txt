@@ -1,0 +1,65 @@
+Invocations                                Event Name         Min         Max         Avg       Total
+Device "Tesla P100-PCIE-16GB (0)"
+    Kernel: _GLOBAL__N__56_tmpxft_000981f1_00000000_30_benchmark_compute_61_cpp1_ii_main::compareKernel(int, int*, int*, int*)
+          1                  tex0_cache_sector_misses      123392      123392      123392      123392
+          1                  tex1_cache_sector_misses      126608      126608      126608      126608
+          1                   shared_ld_bank_conflict           0           0           0           0
+          1                   shared_st_bank_conflict           0           0           0           0
+          1              l2_subp0_write_sector_misses       29588       29588       29588       29588
+          1              l2_subp1_write_sector_misses       29553       29553       29553       29553
+          1               l2_subp0_read_sector_misses      117593      117593      117593      117593
+          1               l2_subp1_read_sector_misses      117105      117105      117105      117105
+    Kernel: _GLOBAL__N__56_tmpxft_000981f1_00000000_30_benchmark_compute_61_cpp1_ii_main::genDataKernel(int, int, int*)
+          1                  tex0_cache_sector_misses      125072      125072      125072      125072
+          1                  tex1_cache_sector_misses      124928      124928      124928      124928
+          1                   shared_ld_bank_conflict           0           0           0           0
+          1                   shared_st_bank_conflict           0           0           0           0
+          1              l2_subp0_write_sector_misses       61538       61538       61538       61538
+          1              l2_subp1_write_sector_misses       61541       61541       61541       61541
+          1               l2_subp0_read_sector_misses          19          19          19          19
+          1               l2_subp1_read_sector_misses          16          16          16          16
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase2KernelHorizontal(int, int*, int, int)
+         96                  tex0_cache_sector_misses        2912       14336       13979     1341984
+         96                  tex1_cache_sector_misses         312        1248        1218      117000
+         96                   shared_ld_bank_conflict           0           0           0           0
+         96                   shared_st_bank_conflict           0           0           0           0
+         96              l2_subp0_write_sector_misses         116        3661        1274      122354
+         96              l2_subp1_write_sector_misses         146        3529        1266      121538
+         96               l2_subp0_read_sector_misses           0        1651          50        4877
+         96               l2_subp1_read_sector_misses           0        1657          51        4937
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase2KernelVertical(int, int*, int, int)
+         96                  tex0_cache_sector_misses        2912       14336       13979     1341984
+         96                  tex1_cache_sector_misses         312        1248        1218      117000
+         96                   shared_ld_bank_conflict           0           0           0           0
+         96                   shared_st_bank_conflict           0           0           0           0
+         96              l2_subp0_write_sector_misses         524        1592         999       95982
+         96              l2_subp1_write_sector_misses         492        1456         989       94964
+         96               l2_subp0_read_sector_misses           0         773          22        2195
+         96               l2_subp1_read_sector_misses           0         777          22        2172
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase1Kernel(int, int*, int, int)
+         96                  tex0_cache_sector_misses          24         384         372       35784
+         96                  tex1_cache_sector_misses           0           0           0           0
+         96                   shared_ld_bank_conflict           0           0           0           0
+         96                   shared_st_bank_conflict           0           0           0           0
+         96              l2_subp0_write_sector_misses           0         160          37        3647
+         96              l2_subp1_write_sector_misses          12         164          40        3876
+         96               l2_subp0_read_sector_misses           6          97           7         753
+         96               l2_subp1_read_sector_misses           0          91           1         175
+    Kernel: _GLOBAL__N__51_tmpxft_000981f1_00000000_20_apsp_compute_61_cpp1_ii_034c69fe::Phase3Kernel(int, int*, int, int)
+         96                  tex0_cache_sector_misses      213263      295438      289426    27784922
+         96                  tex1_cache_sector_misses      213679      293901      288254    27672467
+         96                   shared_ld_bank_conflict           0           0           0           0
+         96                   shared_st_bank_conflict           0           0           0           0
+         96              l2_subp0_write_sector_misses       56293       60671       57774     5546329
+         96              l2_subp1_write_sector_misses       56214       60613       57781     5546998
+         96               l2_subp0_read_sector_misses          84       40891        1372      131777
+         96               l2_subp1_read_sector_misses         173       40821        1472      141386
+    Kernel: _GLOBAL__N__55_tmpxft_000981f1_00000000_25_apsp_ref_compute_61_cpp1_ii_31a82fee::kernel(int, int, int*)
+       1000                  tex0_cache_sector_misses      198755      207166      203907   203907648
+       1000                  tex1_cache_sector_misses      202402      210211      205517   205517067
+       1000                   shared_ld_bank_conflict           0           0           0           0
+       1000                   shared_st_bank_conflict           0           0           0           0
+       1000              l2_subp0_write_sector_misses       62187       65090       62409    62409600
+       1000              l2_subp1_write_sector_misses       62183       65101       62418    62418199
+       1000               l2_subp0_read_sector_misses           0       46030         117      117394
+       1000               l2_subp1_read_sector_misses           4       45883         125      125344
